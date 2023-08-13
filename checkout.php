@@ -122,7 +122,7 @@ include('server/getcheckout.php');
               <option value="South_Africa">South Africa</option>
               <option value="Thailand">Thailand</option>
               <option value="USA">USA</option>
-            </select><span class="error">* <?php //echo $billing_countryErr;?></span><br><br>
+            </select><span class="error">* <?php //echo $billing_countryErr;?></span>
           </div>
           <div class="form-group">
             <label>Email</label>
@@ -131,13 +131,13 @@ include('server/getcheckout.php');
           </div>
           <div class="form-group">
             <label>Phone Number</label>
-            <input type="text" class="form-control" id="billingphonenumber" name="fldbillingphonenumber" placeholder="Billing Phone Number" required/><span class="error">* <?php //echo $billing_phone_numberErr;?></span><br><br>
+            <input type="text" class="form-control" id="billingphonenumber" name="fldbillingphonenumber" placeholder="Billing Phone Number" required/><span class="error">* <?php //echo $billing_phone_numberErr;?></span>
           </div>
           <div class="form-group">
             <label>ID Number</label>
             <input type="text" class="form-control" id="billingidnumber" name="fldbillingidnumber" placeholder="Billing ID Number" required/>
             <span class="error">* <?php //echo $billing_idErr;?></span>
-          </div> 
+          </div><br><br>
           <p><b>Shipping Information<label><input name="check_address" type="checkbox" value="" id="check-address" value="<?php echo $check_address;?>"> Same as Billing Information?</label></b></p> 
           <div class="form-group">
             <label>First Name</label>
@@ -189,7 +189,7 @@ include('server/getcheckout.php');
               <option value="South_Africa">South Africa</option>
               <option value="Thailand">Thailand</option>
               <option value="USA">USA</option>
-            </select><span class="error">* <?php //echo $shipping_countryErr;?></span><br><br>
+            </select><span class="error">* <?php //echo $shipping_countryErr;?></span>
           </div>
           <div class="form-group">
             <label>Email</label>
@@ -198,7 +198,7 @@ include('server/getcheckout.php');
           </div>
           <div class="form-group">
             <label>Phone Number</label>
-            <input type="text" class="form-control" id="shippingphonenumber" name="fldshippingphonenumber" placeholder="Shipping Phone Number" required/><span class="error">* <?php //echo $shipping_phone_numberErr;?></span><br><br>
+            <input type="text" class="form-control" id="shippingphonenumber" name="fldshippingphonenumber" placeholder="Shipping Phone Number" required/><span class="error">* <?php //echo $shipping_phone_numberErr;?></span>
           </div>
           <div class="form-group">
             <label>Delivery Comment</label>
@@ -206,9 +206,9 @@ include('server/getcheckout.php');
           </div>  
           <div class="form-group">
             <div class="row">
-              <div class="floatR checkoutbtncontainer" style="margin-right: 50px;"><br/>
-              <p>Total Amount: R <?php echo $_SESSION['total']; ?></p>
-              <input name="checkoutbtn" id="Submit" class="submit" type="submit" value="Proceed to Payment" style="color: red; background-color: silver; border-radius: 30px; font-size: 12px; font-weight: 10px; font-family: algeria; transition: background 0.5s; width: 100%"></div> 
+              <div class="floatR"><br/>
+              <p style="font-size: 18px; font-family: verdana; font-weight: 100px">Total Amount: R <?php echo $_SESSION['total']; ?></p>
+              <input name="checkoutbtn" id="submit" class="AddressSubmit" type="submit" value="Proceed to Payment"></div> 
             </div>
           </div>
         </form> 
