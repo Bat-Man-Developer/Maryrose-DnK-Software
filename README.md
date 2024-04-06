@@ -21,7 +21,7 @@ To use Visual Studio Code (VS Code) for web development with PHP, you can follow
 
 3. Install PHP and Set Up a Web Server: To run PHP code, you need to have PHP installed on your computer and a web server set up. Here are a couple of options:
 
-4.Install a local development environment like XAMPP (https://www.apachefriends.org/index.html) or WAMP (http://www.wampserver.com/) that includes PHP, Apache, and MySQL. These packages provide an all-in-one solution for PHP web development.
+4. Install a local development environment like XAMPP (https://www.apachefriends.org/index.html) or WAMP (http://www.wampserver.com/) that includes PHP, Apache, and MySQL. These packages provide an all-in-one solution for PHP web development.
 Alternatively, you can install PHP separately and configure it with a web server of your choice, such as Apache or Nginx.
 Create a Project Folder: Create a new folder on your computer where you want to store your PHP web development project.
 
