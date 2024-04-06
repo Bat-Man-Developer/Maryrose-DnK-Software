@@ -13,23 +13,34 @@ Smart Health Diagnosis, Monitoring and Tracking.
 =======
 # Wine Ecommerce Software 🍷
 
-To run C++ programs using Code::Blocks, you can follow these steps:
+To use Visual Studio Code (VS Code) for web development with PHP, you can follow these steps:
 
-1. Install Code::Blocks: If you haven't already, download and install Code::Blocks IDE from the official website (https://www.codeblocks.org/). Make sure to choose the appropriate version for your operating system.
+1. Install Visual Studio Code: If you haven't already, download and install Visual Studio Code from the official website (https://code.visualstudio.com/). Choose the appropriate version for your operating system and follow the installation instructions.
 
-2. Create a new C++ project: Launch Code::Blocks and click on "Create a new project" or go to "File" > "New" > "Project". From the project types list, select "Console application" and click "Go".
+2. Install PHP Extension: VS Code provides extensions that enhance PHP development capabilities. Install the "PHP Intellisense" or "PHP IntelliSense - Crane" extension to get PHP language support, code completion, and other PHP-specific features. You can install extensions by going to the Extensions view in VS Code (click on the square icon on the sidebar or press Ctrl+Shift+X (Windows/Linux) or Cmd+Shift+X (macOS)) and searching for the desired extension.
 
-3. Set project details: Choose "C++" as the project type and give your project a name. Select the location where you want to save your project and click "Next".
+3. Install PHP and Set Up a Web Server: To run PHP code, you need to have PHP installed on your computer and a web server set up. Here are a couple of options:
 
-4. Select a compiler: Choose the compiler you want to use. Code::Blocks usually comes with GCC by default. Ensure that the selected compiler is compatible with your system and click "Finish".
+4.Install a local development environment like XAMPP (https://www.apachefriends.org/index.html) or WAMP (http://www.wampserver.com/) that includes PHP, Apache, and MySQL. These packages provide an all-in-one solution for PHP web development.
+Alternatively, you can install PHP separately and configure it with a web server of your choice, such as Apache or Nginx.
+Create a Project Folder: Create a new folder on your computer where you want to store your PHP web development project.
 
-5. Write your C++ code: Code::Blocks will create a basic C++ template for you. You can start writing your C++ code in the editor window.
+5. Open the Project Folder in VS Code: Launch VS Code and select "File" > "Open Folder" (or "Open" on macOS). Choose the project folder you created in the previous step.
 
-6. Save your code: Go to "File" > "Save" to save your C++ code.
+6. Create PHP Files: Inside the project folder, create PHP files as needed for your web development project. You can right-click on the project folder in the VS Code Explorer and select "New File" to create new files with a .php extension.
 
-7. Build your project: To compile your C++ code, click on the "Build" menu and choose "Build" or press the F9 key. Code::Blocks will compile your code and display any errors or warnings in the "Build Log" window.
+7. Write PHP Code: Open the PHP files in VS Code's editor and start writing your PHP code. The installed PHP extension will provide features such as code completion, syntax highlighting, and code formatting.
 
-8. Run your program: If the compilation is successful, you can run your program by clicking on the "Run" menu and choosing "Run" or by pressing the F10 key. The output of your program will be displayed in the "Console" window.
+8. Preview in a Web Browser: To preview your PHP web pages, you need to run them on a web server. Here's how you can do it using XAMPP as an example:
 
+<<<<<<< HEAD
 That's it! You have successfully written and run a C++ program using Code::Blocks. You can modify your code, rebuild the project, and rerun it as needed.
 >>>>>>> 42f4179 (Update README.md)
+=======
+9. Start the XAMPP control panel and ensure that both Apache and MySQL services are running.
+Move your PHP files to the htdocs folder in the XAMPP installation directory. For example, C:\xampp\htdocs\project-folder.
+Open a web browser and navigate to http://localhost/project-folder/file.php, replacing project-folder with the name of your project folder and file.php with the name of the PHP file you want to run.
+Debugging PHP Code (optional): VS Code also provides debugging capabilities for PHP. You can install additional extensions like "PHP Debug" or "Xdebug" to enable debugging in VS Code. Refer to the documentation of the specific extension you choose for instructions on how to set up and use PHP debugging in VS Code.
+
+That's it! You can now use Visual Studio Code for web development with PHP, writing PHP code, previewing your PHP web pages on a local web server, and utilizing PHP-specific extensions and debugging tools to enhance your workflow.
+>>>>>>> 92ee656 (Update README.md)
