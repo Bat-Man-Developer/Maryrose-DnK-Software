@@ -196,7 +196,7 @@ include('layouts/header.php');
 
 			<div class="col-2">
 				<h1>Experience Taste Of The Queens!</h1>
-				<p>Doing your best requires you to have the best so do your best discover your hidden potentials & ideas from the tip of your hands. Wine<br>designed for the Queens & Kings.</p>
+				<p>Doing your best requires you to have the best so do your best discover your hidden potentials & ideas from the tip of your hands. Wine designed for the Queens & Kings.</p>
 				<a href="<?php echo "products.php"; ?>" class="btn">Explore Now &#8594;</a>
 			</div>
 			<div class="col-2">

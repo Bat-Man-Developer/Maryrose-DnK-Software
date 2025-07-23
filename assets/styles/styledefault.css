@@ -1044,6 +1044,18 @@
 
 /*-------media query for less than 400 screen size----*/
 @media only screen and (max-width: 400px){
+.col-2 {
+  flex-basis: 40%;
+  min-width: 250px;
+}
+.col-2 h1{
+	font-size: 40px;
+	line-height: 40px;
+	margin: 12px 0;
+}
+.col-2 p {
+  font-size: 14px;
+}
 /*---------- About Page ------------*/
 	.franceflag{
 		width: 300px;
@@ -1094,421 +1106,424 @@
 
 /*-------media query for less than 300 screen size----*/
 @media only screen and (max-width: 300px){	
-	.col-2{
-		flex-basis: 50%;
-		min-width: 300px;
-	}
-	.col-2 img{
-		max-width: 100%;
-		padding: 50px 0;
-	}
-	.col-2 h1{
-		font-size: 50px;
-		line-height: 60px;
-		margin: 25px 0;
-	}
-	
-	.col-3{
-		flex-basis: 30%;
-		min-width: 250px;
-		margin-bottom: 30px;
-	}
-	
-	.col-3 img{
-		width: 100%;
-	}
-	
-	.col-4{
-		flex-basis: 25%;
-		padding: 10px;
-		min-width: 200px;
-		margin-bottom: 50px;
-		transition: transform 0.5s;
-	}
-	
-	.col-4 img{
-		width: 100%;
-		height: 50%;
-	}
-	
-	.col-4 p{
-		font-size: 14px;
-	}
-	
-	.col-4:hover{
-		transform: translate(-5px);
-	}
-	
-	.container{
-		max-width: 100%;
-		margin: auto;
-		padding-left: 25px;
-		padding-right: 25px;
-	}
-	
-	.small-container{
-		max-width: 1080px;
-		margin: auto;
-		padding-left: 25px;
-		padding-right: 25px;
-	}
-	
-	.row{
-		display: flex;
-		align-items: center;
-		flex-wrap: wrap;
-		justify-content: space-around;
-	}
-	
-	.categories{
-		margin: 70px 0;
-	}
-	
+.col-2 {
+	flex-basis: 30%;
+	min-width: 200px;
+}
+.col-2 h1{
+	font-size: 30px;
+	line-height: 30px;
+	margin: 7px 0;
+}
+.col-2 p {
+	font-size: 7px;
+}
+.col-2 img{
+	max-width: 100%;
+	padding: 50px 0;
+}
+
+.col-3{
+	flex-basis: 30%;
+	min-width: 250px;
+	margin-bottom: 30px;
+}
+
+.col-3 img{
+	width: 100%;
+}
+
+.col-4{
+	flex-basis: 25%;
+	padding: 10px;
+	min-width: 200px;
+	margin-bottom: 50px;
+	transition: transform 0.5s;
+}
+
+.col-4 img{
+	width: 100%;
+	height: 50%;
+}
+
+.col-4 p{
+	font-size: 14px;
+}
+
+.col-4:hover{
+	transform: translate(-5px);
+}
+
+.container{
+	max-width: 100%;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.small-container{
+	max-width: 1080px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.categories{
+	margin: 70px 0;
+}
+
 /*------buttons design-------*/
-	.btn{
-		padding: 8px 30px;
-		margin: 30px 0;
-	}
-	
+.btn{
+	padding: 8px 30px;
+	margin: 30px 0;
+}
+
 /*-------Header design-------*/
-	.header .logo{
-		width: 75px;
-		height: 37.5px;
-	}
+.header .logo{
+	width: 75px;
+	height: 37.5px;
+}
 
-	#cart-pic{
-		right: 0%;
-	}
-	
-	.menu-icon{
-		width: 28px;
-		margin-left: 20px;
-		left: 0%;
-	}
+#cart-pic{
+	right: 0%;
+}
 
-	.header .cartpic{
-		width: 20px;
-		height: 30px;
-	}
-	
-	.header .row{
-		margin-top: 70px;
-	}
-	
-	.navbar{
-		display: flex;
-		align-items: center;
-		padding: 20px;
-	}
+.menu-icon{
+	width: 28px;
+	margin-left: 20px;
+	left: 0%;
+}
 
-	nav{
-		width: 50%;
-		height: 100%;
-		line-height: 100%;
-	}
-	
-	.title{
-		margin: 0 auto 80px;
-		line-height: 60px;
-	}
-	
-	.title::after{
-		width: 80px;
-		height: 5px;
-		bottom: 0;
-		left: 50%;
-		transform: translate(-50%);
-	}
-	
-	.cartquantity{
-		padding: 2px 5px;
-		border-radius: 50%;
-		margin: -5px;
-	}
-	
+.header .cartpic{
+	width: 20px;
+	height: 30px;
+}
+
+.header .row{
+	margin-top: 70px;
+}
+
+.navbar{
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+
+nav{
+	width: 50%;
+	height: 100%;
+	line-height: 100%;
+}
+
+.title{
+	margin: 0 auto 80px;
+	line-height: 60px;
+}
+
+.title::after{
+	width: 80px;
+	height: 5px;
+	bottom: 0;
+	left: 50%;
+	transform: translate(-50%);
+}
+
+.cartquantity{
+	padding: 2px 5px;
+	border-radius: 50%;
+	margin: -5px;
+}
+
 /*---------- About Page ------------*/
-	.franceflag{
-		width: 280px;
-		height: 240px;
-	}
-	
+.franceflag{
+	width: 280px;
+	height: 240px;
+}
+
 /*--------- offer ---------*/
-	.offer{
-		margin-top: 80px;
-		padding: 30px 0;
-	}
-	
-	.col-2 .offer-img{
-		padding: 50px;
-	}
-	
+.offer{
+	margin-top: 80px;
+	padding: 30px 0;
+}
+
+.col-2 .offer-img{
+	padding: 50px;
+}
+
 /*---------testimonial--------*/
-	.testimonial{
-		padding-top: 100px;
-	}
-	
-	.testimonial .col-3{
-		padding: 40px 20px;
-	}
-	
-	.testimonial .col-3 img{
-		width: 50px;
-		margin-top: 20px;
-	}
-	
-	.fa.fa-quote-left{
-		font-size: 34px;
-	}
-	
-	.col-3 p{
-		font-size: 12px;
-		margin: 12px 0;
-	}
-	
-	.testimonial .col-3 h3{
-		font-size: 16px;
-	}
-	
+.testimonial{
+	padding-top: 100px;
+}
+
+.testimonial .col-3{
+	padding: 40px 20px;
+}
+
+.testimonial .col-3 img{
+	width: 50px;
+	margin-top: 20px;
+}
+
+.fa.fa-quote-left{
+	font-size: 34px;
+}
+
+.col-3 p{
+	font-size: 12px;
+	margin: 12px 0;
+}
+
+.testimonial .col-3 h3{
+	font-size: 16px;
+}
+
 /*----------brands-----------*/
-	.brands{
-		margin: 100px auto;
-	}
-	
-	.col-5{
-		width: 160px;
-	}
-	
-	.col-5 img{
-		width: 100%;
-	}
-	
+.brands{
+	margin: 100px auto;
+}
+
+.col-5{
+	width: 160px;
+}
+
+.col-5 img{
+	width: 100%;
+}
+
 /*---------Footerpage------------*/
-	.footer{
-		font-size: 14px;
-		padding: 60px 0 20px;
-	}
-	
-	.footer h3{
-		margin-bottom: 20px;
-	}
-	
-	.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
-		min-width: 250px;
-		margin-bottom: 20px;
-	}
-	
-	.footer-col-2 img{
-		width: 180px;
-		margin-bottom: 20px;
-	}
-	
-	.app-logo{
-		margin-top: 20px;
-	}
-	
-	.app-logo img{
-		width: 140px;
-	}
-	
-	.footer hr{
-		height: 1px;
-		margin: 20px 0;
-	}
-	
+.footer{
+	font-size: 14px;
+	padding: 60px 0 20px;
+}
+
+.footer h3{
+	margin-bottom: 20px;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+	min-width: 250px;
+	margin-bottom: 20px;
+}
+
+.footer-col-2 img{
+	width: 180px;
+	margin-bottom: 20px;
+}
+
+.app-logo{
+	margin-top: 20px;
+}
+
+.app-logo img{
+	width: 140px;
+}
+
+.footer hr{
+	height: 1px;
+	margin: 20px 0;
+}
+
 /*----------all products------------*/
-	#searchtype{
-		margin-left: 12px;
-		font-size: 11px;
-	}
-	
-	.searchprice{
-		width: 117px;
-		height: 12px;
-		padding: 12px;
-		padding-left: 20px;
-	}
+#searchtype{
+	margin-left: 12px;
+	font-size: 11px;
+}
 
-	.displayallproducts{
-		min-width: 140px;
-	}
+.searchprice{
+	width: 117px;
+	height: 12px;
+	padding: 12px;
+	padding-left: 20px;
+}
 
-	.page-btn{
-		margin: 0 auto 80px;
-		margin-left: 105px;
-		margin-top: 50px;
-		margin-bottom: 850px;
-	}
-	
-	.page-btn span{
-		margin-left: 10px;
-		width: 40px;
-		height: 40px;
-		line-height: 40px;
-	}
-	
+.displayallproducts{
+	min-width: 140px;
+}
+
+.page-btn{
+	margin: 0 auto 80px;
+	margin-left: 105px;
+	margin-top: 50px;
+	margin-bottom: 850px;
+}
+
+.page-btn span{
+	margin-left: 10px;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+}
+
 /*---------single product details---------*/
-	.row-2{
-		justify-content: space-between;
-		margin: 100px auto 50px;
-	}
-	
-	.single-product{
-		margin-top: 80px;
-	}
-	
-	.single-product .col-2 img{
-		padding: 0;
-	}
-	.single-product .col-2{
-		padding: 20px;
-	}
-	.single-product h4{
-		margin: 20px 0;
-		font-size: 22px;
-		font-weight: bold;
-	}
-	.single-product select{
-		display: block;
-		padding: 10px;
-		margin-top: 20px;
-	}
-	.single-product input{
-		width: 50px;
-		height: 40px;
-		padding-left: 10px;
-		font-size: 20px;
-		margin-right: 10px;
-	}
-	input:focus{
-		outline: none;
-	}
-	.single-product .fa{
-		margin-left: 10px;
-	}
-	.small-img-row{
-		display: flex;
-		justify-content: space-between;
-	}
-	.small-img-col{
-		flex-basis: 24%;
-	}
+.row-2{
+	justify-content: space-between;
+	margin: 100px auto 50px;
+}
 
-	#addtocartbtn{
-		width: 75%;
-		padding: 10px;
-	}
+.single-product{
+	margin-top: 80px;
+}
 
-	#buynowbtn{
-		width: 75%;
-		padding: 10px;
-	}
-	
+.single-product .col-2 img{
+	padding: 0;
+}
+.single-product .col-2{
+	padding: 20px;
+}
+.single-product h4{
+	margin: 20px 0;
+	font-size: 22px;
+	font-weight: bold;
+}
+.single-product select{
+	display: block;
+	padding: 10px;
+	margin-top: 20px;
+}
+.single-product input{
+	width: 50px;
+	height: 40px;
+	padding-left: 10px;
+	font-size: 20px;
+	margin-right: 10px;
+}
+input:focus{
+	outline: none;
+}
+.single-product .fa{
+	margin-left: 10px;
+}
+.small-img-row{
+	display: flex;
+	justify-content: space-between;
+}
+.small-img-col{
+	flex-basis: 24%;
+}
+
+#addtocartbtn{
+	width: 75%;
+	padding: 10px;
+}
+
+#buynowbtn{
+	width: 75%;
+	padding: 10px;
+}
+
 /*----------login-page------------*/
-	.loginpage{
-		padding: 50px 0;
-	}
-	
-	.formcontainer form{
-		padding: 0 20px;
-		top: 130px;
-	}
-	
-	form input{
-		width: 50%;
-		margin: 5px auto;
-	}
-	
-	form .btn{
-		width: 100%;
-		margin: 10px 0;
-	}
-	
-	#loginform{
-		width: 100%;
-		margin: 5px auto;
-		padding: 20px;
-	}
-	
-	form a{
-		font-size: 12px;
-	}
-	
+.loginpage{
+	padding: 50px 0;
+}
+
+.formcontainer form{
+	padding: 0 20px;
+	top: 130px;
+}
+
+form input{
+	width: 50%;
+	margin: 5px auto;
+}
+
+form .btn{
+	width: 100%;
+	margin: 10px 0;
+}
+
+#loginform{
+	width: 100%;
+	margin: 5px auto;
+	padding: 20px;
+}
+
+form a{
+	font-size: 12px;
+}
+
 /*------Registration-page------*/
-	#registrationform{
-		width: 50%;
-		margin: 5px auto;
-		padding: 20px;
-	}
-	
+#registrationform{
+	width: 50%;
+	margin: 5px auto;
+	padding: 20px;
+}
+
 /*----------Account-page--------*/
-	#accountform{
-		width: 50%;
-		margin: 35px;
-		padding: 20px;
-	}
-	
-	#accountform input{
-		margin: 5px auto;
-	}
-	
-	#sub-container{
-		padding: 0px;
-		margin-right: 140px;
-	}
-	
-	#account-page{
-		padding: 0px;
-		margin-right: -140px;
-	}
-	
+#accountform{
+	width: 50%;
+	margin: 35px;
+	padding: 20px;
+}
+
+#accountform input{
+	margin: 5px auto;
+}
+
+#sub-container{
+	padding: 0px;
+	margin-right: 140px;
+}
+
+#account-page{
+	padding: 0px;
+	margin-right: -140px;
+}
+
 /*----------Orders page--------*/
-	.orders table{
-		font-size: auto;
-		width: 100%;
-	}
-	
-	.orders th{
-		padding: 5px 20px;
-	}
-	
-	.orders td{
-		padding: 10px 20px;
-	}
-	
-	.orders td img{
-		width: 80px;
-		height: 80px;
-		margin-right: 10px;
-	}
-	
-	.orders #accountbottomspace{
-		margin-top: 50px;
-		margin-bottom: 200px;
-	}
+.orders table{
+	font-size: auto;
+	width: 100%;
+}
+
+.orders th{
+	padding: 5px 20px;
+}
+
+.orders td{
+	padding: 10px 20px;
+}
+
+.orders td img{
+	width: 80px;
+	height: 80px;
+	margin-right: 10px;
+}
+
+.orders #accountbottomspace{
+	margin-top: 50px;
+	margin-bottom: 200px;
+}
 
 /*----------Orders Details page--------*/
-	.orderdetails table{
-		width: 100%;
-	}
-	
-	.orderdetails th{
-		padding: 5px 20px;
-	}
-	
-	.orderdetails td{
-		padding: 10px 20px;
-	}
-	
-	.orderdetails td img{
-		width: 80px;
-		height: 80px;
-		margin-right: 10px;
-	}
+.orderdetails table{
+	width: 100%;
+}
+
+.orderdetails th{
+	padding: 5px 20px;
+}
+
+.orderdetails td{
+	padding: 10px 20px;
+}
+
+.orderdetails td img{
+	width: 80px;
+	height: 80px;
+	margin-right: 10px;
+}
 
 /*---------- Track Order Page --------*/
-	.realtimetrackingstatuscontainer input{
-		margin-left: 75px;
-	}
+.realtimetrackingstatuscontainer input{
+	margin-left: 75px;
+}
 	
 }
 
