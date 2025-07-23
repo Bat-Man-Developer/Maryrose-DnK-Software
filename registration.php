@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+include('layouts/header.php');
 
 //if user has already registered then take user to account page
 if(isset($_SESSION['logged_in'])){
@@ -9,8 +9,6 @@ if(isset($_SESSION['logged_in'])){
 }
 
 include('server/getregistration.php');
-
-include('layouts/header.php');
 
 ?>
   </div>
@@ -22,58 +20,89 @@ include('layouts/header.php');
 		<h2 class="form-weight-bold">Registration</h2>
 		<hr class="max-auto">
 	</div>
-	<div class="max-auto container">
+	<div class="registrationcontainer">
 		<form id="registrationform" method="POST" action="registration.php">
 			<p style="color: red;"><?php if(isset($_GET['error'])){ echo $_GET['error'];} ?></p>
 			<div class="form-group">
-				<label>First Name</label>
-				<input type="text" class="form-control" id="registrationfirstname" name="flduserfirstname" placeholder="First Name" required/>
+				<label>First Name
+				  <input type="text" class="form-control" id="registrationfirstname" name="flduserfirstname" placeholder="First Name" required/>
+				</label>
 			</div>
 			<div class="form-group">
-			<label>Last Name</label>
-				<input type="text" class="form-control" id="registrationlastname" name="flduserlastname" placeholder="Last Name" required/>
+				<label>Last Name
+					<input type="text" class="form-control" id="registrationlastname" name="flduserlastname" placeholder="Last Name" required/>
+				</label>
 			</div>
 			<div class="form-group">
-			<label>Addressline1</label>
-				<input type="text" class="form-control" id="registrationaddressline1" name="flduseraddressline1" placeholder="Addressline1" required/>
+				<label>Addressline1
+					<input type="text" class="form-control" id="registrationaddressline1" name="flduseraddressline1" placeholder="Addressline1" required/>
+				</label>
 			</div>
 			<div class="form-group">
-			<label>Addressline2</label>
-				<input type="text" class="form-control" id="registrationaddressline2" name="flduseraddressline2" placeholder="Addressline2"/>
+				<label>Addressline2
+					<input type="text" class="form-control" id="registrationaddressline2" name="flduseraddressline2" placeholder="Addressline2"/>
+				</label>
 			</div>
 			<div class="form-group">
-			<label>Postal Code</label>
-				<input type="text" class="form-control" id="registrationpostalcode" name="flduserpostalcode" placeholder="Postalcode" required/>
+				<label>Postal Code
+					<input type="text" class="form-control" id="registrationpostalcode" name="flduserpostalcode" placeholder="Postalcode" required/>
+				</label>
 			</div>
 			<div class="form-group">
-			<label>City</label>
-				<input type="text" class="form-control" id="registrationcity" name="fldusercity" placeholder="City" required/>
+				<label>City
+					<input type="text" class="form-control" id="registrationcity" name="fldusercity" placeholder="City" required/>
+				</label>
 			</div>
 			<div class="form-group">
-			<label>Country</label>
-				<input type="text" class="form-control" id="registrationcountry" name="fldusercountry" placeholder="Country" required/>
+				<label>Country
+					<select class="form-control" id="registrationcountry" name="fldusercountry" size="1" value="" required>
+						<option value="">Select Country..</option>
+						<option value="Australia">Australia</option>
+						<option value="Britain">Britain</option>
+						<option value="China">China</option>
+						<option value="Egypt">Egypt</option>
+						<option value="England">England</option>
+						<option value="France">France</option>
+						<option value="Germany">Germany</option>
+						<option value="Italy">Italy</option>
+						<option value="Mauritius">Mauritius</option>
+						<option value="Mexico">Mexico</option>
+						<option value="Nigeria">Nigeria</option>
+						<option value="Portugal">Portugal</option>
+						<option value="Russia">Russia</option>  
+						<option value="South_Africa">South Africa</option>
+						<option value="Thailand">Thailand</option>
+						<option value="USA">USA</option>
+					</select>
+				</label>
 			</div>
 			<div class="form-group">
-			<label>Phone Number</label>
-				<input type="text" class="form-control" id="registrationphonenumber" name="flduserphonenumber" placeholder="Phone Number" required/>
+				<label>Phone Number
+					<input type="text" class="form-control" id="registrationphonenumber" name="flduserphonenumber" placeholder="Phone Number" required/>
+				</label>
 			</div>
 			<div class="form-group">
-			<label>Email</label>
-				<input type="text" class="form-control" id="registrationemail" name="flduseremail" placeholder="Email" required/>
+				<label>Email
+					<input type="text" class="form-control" id="registrationemail" name="flduseremail" placeholder="Email" required/>
+				</label>
 			</div>
 			<div class="form-group">
-			<label>ID Number</label>
-				<input type="text" class="form-control" id="registrationidnumber" name="flduseridnumber" placeholder="ID Number" required/>
+				<label>ID Number
+					<input type="text" class="form-control" id="registrationidnumber" name="flduseridnumber" placeholder="ID Number" required/>
+				</label>
 			</div>
 			<div class="form-group">
-			<label>Password</label>
-				<input type="password" class="form-control" id="registrationpassword" name="flduserpassword" placeholder="Password" required/>
+				<label>Password
+					<input type="password" class="form-control" id="registrationpassword" name="flduserpassword" placeholder="Password" required/>
+				</label>
 			</div>
 			<div class="form-group">
-			<label>Confirm Password</label>
-				<input type="password" class="form-control" id="registrationconfirmpassword" name="flduserconfirmpassword" placeholder="Confirm Password" required/>
+				<label>Confirm Password
+					<input type="password" class="form-control" id="registrationconfirmpassword" name="flduserconfirmpassword" placeholder="Confirm Password" required/>
+				</label>
 			</div>
-			<div class="form-group">
+			<div class="row">
+			  <input type="hidden" name="flduserimage" value="unknownimage.png" required/>
 				<button type="submit" name="registrationbtn" class="btn" id="registration-btn" required>Register</button>
 				<a id="loginurl" href="login.php">Do you have an account? Login</a>
 			</div>

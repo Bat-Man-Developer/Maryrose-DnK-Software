@@ -39,21 +39,23 @@ if(isset($_POST['trackorderbtn'])) {
       //3.1.1.2 if there is a user password already linked with this email
       if($num_rows1 != 0){
         $_SESSION['logged_in'] = true;
-        header('location: ../account.php?loginmessage=already a user. succesfully placed order');
+        header('location: ../account.php?paymentmessage=Order Placed Successfully.'); 
       }
       else{
         $stmt1 = $conn->prepare("UPDATE users SET flduserpassword=? WHERE flduseremail=?");
-
         $stmt1->bind_param('ss',md5($userpassword),$useremail);
 
+        $stmt2 = $conn->prepare("UPDATE testimonials SET fldtestimonialspassword=? WHERE fldtestimonialsemail=?");
+        $stmt2->bind_param('ss',md5($testimonialspassword),$testimonialsemail);
+
         //if account was created succesfully
-        if($stmt1->execute()){
+        if($stmt1->execute() && $stmt2->execute()){
           $_SESSION['logged_in'] = true;
-          header('location: ../trackorder.php?registermessage=You Placed Order Succesfully');
+          header('location: ../account.php?paymentmessage=Order Placed Succesfully');
         }
       }
     }
-    else{//3.1.2 if no user registered with this email before
+    else{//3.1.2 if no user registered with this email before means user did not checkout and pay. It might be a hacker
         header('location: ../index.php?error unidentified user');
     }
   }

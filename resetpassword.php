@@ -1,17 +1,6 @@
 <?php
-
-session_start();
-
-//if user did not pay take user to home page
-/*if(!isset($_SESSION['emailbtn'])){
-  header('location: index.php');
-  exit;
-}*/
-
-include('server/getresetpassword.php');
-
 include('layouts/header.php');
-
+include('server/getresetpassword.php');
 ?>
   </div>
 </div>
@@ -27,16 +16,19 @@ include('layouts/header.php');
 			<p style="color: red;"><?php if(isset($_GET['error'])){ echo $_GET['error'];} ?></p>
 			
 			<div class="form-group">
-			<label>Email</label>
-				<input type="text" class="form-control" id="resetemail" name="flduseremail" placeholder="Email" required/>
+				<label>Email
+					<input type="text" class="form-control" id="resetemail" name="flduseremail" placeholder="Email" required/>
+				</label>
 			</div>
 			<div class="form-group">
-			<label>Password</label>
-				<input type="password" class="form-control" id="resetpasswordpassword" name="flduserpassword" placeholder="Password" required/>
+				<label>Password
+					<input type="password" class="form-control" id="resetpasswordpassword" name="flduserpassword" placeholder="Password" required/>
+				</label>
 			</div>
 			<div class="form-group">
-			<label>Confirm Password</label>
-				<input type="password" class="form-control" id="resetpasswordconfirmpassword" name="flduserconfirmpassword" placeholder="Confirm Password" required/>
+				<label>Confirm Password
+					<input type="password" class="form-control" id="resetpasswordconfirmpassword" name="flduserconfirmpassword" placeholder="Confirm Password" required/>
+				</label>
 			</div>
 			<div class="form-group">
 				<button type="submit" name="resetpasswordbtn" class="btn" id="resetpasswordbtn" required>Reset Password</button>
@@ -44,10 +36,6 @@ include('layouts/header.php');
 		</form>
 	</div>
 </section>
-
-
 <?php
-
-include('layouts/footer.php');
-	
+  include('layouts/footer.php');
 ?>

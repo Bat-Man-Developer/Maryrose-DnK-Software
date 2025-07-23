@@ -184,7 +184,7 @@
 		background: silver;
 		color: #8a8a8a;
 		width: 100vw;
-		height: 100vh;
+		height: 200px;
 	}
 
 	.footer p{
@@ -266,7 +266,6 @@
 	#loginform{
 		color: black;
 	}
-
 /*---------- Layouts ---------*/
 	.adminbtn{
 		text-align: center;

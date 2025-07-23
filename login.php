@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+include('layouts/header.php');
 
 //if user has already logged in then take user to account page
 if(isset($_SESSION['logged_in'])){
@@ -9,8 +9,6 @@ if(isset($_SESSION['logged_in'])){
 }
 
 include('server/getlogin.php');
-
-include('layouts/header.php');
 
 ?>
   </div>
@@ -26,18 +24,20 @@ include('layouts/header.php');
 		
 		<div class="formcontainer">
 			
-				<img src="assets/images/Vintage blue1.jpg" alt="Snow" height="100px" alt="Snow" style="width: 20%; margin-right: 10px">
+				<img src="assets/images/Vintage blue1.jpg" alt="Snow" height="100px" alt="Snow" style="width: 20%">
 			
 			<form id="loginform" method="POST" action="login.php">
 				<p style="color: red" class="text-center"><?php if(isset($_GET['error'])){ echo $_GET['error']; }?></p>
 				<p style="color: green" class="text-center"><?php if(isset($_GET['message'])){ echo $_GET['message']; }?></p>
 				<div class="form-group">
-					<label>Email</label><br>
-					<input type="text" class="form-control" id="loginemail" name="flduseremail" placeholder="Email" required/>
+					<label>Email
+					  <input type="text" class="form-control" id="loginemail" name="flduseremail" placeholder="Email" required/>
+					</label><br>
 				</div>
 				<div class="form-group">
-				<label>Password</label><br>
+				<label>Password
 					<input type="password" class="form-control" id="loginpassword" name="flduserpassword" placeholder="Password" required/>
+				</label><br>
 				</div>
 				<div class="form-group">
 					<button type="submit" name="loginbtn" class="btn" id="loginbtn" required>Login</button>
